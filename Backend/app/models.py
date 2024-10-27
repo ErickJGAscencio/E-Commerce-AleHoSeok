@@ -4,15 +4,14 @@ from django.db import models
 # Create your models here.
 
 # Modelos Relacion Usuario
-
 class TipoUsuario(models.Model):
-  nombre_tipo = models.CharField(max_length=100)
+  nombre_tipo = models.CharField(max_length=50, unique=True) 
   
   def __str__(self):
     return self.nombre_tipo
   
 class CustomUser(AbstractUser):
-  telefono = models.CharField(max_length=15, null=True, blank=True)
+  telefono = models.CharField(max_length=10, null=True, blank=True)
   tipo_usuario = models.ForeignKey(TipoUsuario, on_delete=models.SET_NULL, null=True, blank=True)
     
   def __str__(self):
@@ -25,6 +24,8 @@ class Direccion(models.Model):
   calle_principal = models.CharField(max_length=50, null=True, blank=True)
   calle_primera = models.CharField(max_length=50, null=True, blank=True)
   calle_segunda = models.CharField(max_length=50, null=True, blank=True)
+  casa_num = models.CharField(max_length=10, null=True, blank=True)
+  referencia = models.CharField(max_length=100, null=True, blank=True)
   usuario = models.ForeignKey(CustomUser, on_delete=models.CASCADE)  
 
 # Modelos Relacion Producto
