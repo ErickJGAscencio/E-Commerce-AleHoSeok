@@ -1,6 +1,10 @@
+import HomePage from "./components/pages/HomePage"
+
 function App() {
   return (
-    <div>Hello world</div>
+    <div>
+      <HomePage></HomePage>
+    </div>
   )
 }
 
