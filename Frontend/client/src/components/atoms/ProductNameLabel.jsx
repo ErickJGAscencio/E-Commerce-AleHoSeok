@@ -2,7 +2,7 @@ import React from 'react'
 
 function ProductNameLabel({name}) {
   return (
-    <div>{name}</div>
+    <div className=''>{name}</div>
   )
 }
 

@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+  background-color: rgb(223, 223, 152);
+}
+
+.button{
+  background-color: turquoise;
+  width: auto;
+}
+
+.button:hover{
+  background-color: rgb(48, 169, 156);
+  cursor: pointer;
+}

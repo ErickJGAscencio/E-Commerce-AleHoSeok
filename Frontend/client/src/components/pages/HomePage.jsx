@@ -3,7 +3,7 @@ import Header from '../organisms/Header'
 import { useFetchProducts } from '../../hooks/useFetchProducts';
 import ProductList from '../organisms/ProductList';
 
-const HomePage   = () => {
+const HomePage = () => {
   const { products, loading, error } = useFetchProducts();  // Custom Hook
 
   if (loading) return <div>Loading...</div>;
@@ -11,7 +11,7 @@ const HomePage   = () => {
 
   return (
     <div>
-      <Header />
+      {/* <Header /> */}
       <ProductList products={ products } />
     </div>
   );
