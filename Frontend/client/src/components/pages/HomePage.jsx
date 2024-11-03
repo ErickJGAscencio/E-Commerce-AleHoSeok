@@ -1,6 +1,7 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import Header from '../organisms/Header'
 import { useFetchProducts } from '../../hooks/useFetchProducts';
+import ProductList from '../organisms/ProductList';
 
 const HomePage   = () => {
   const { products, loading, error } = useFetchProducts();  // Custom Hook
@@ -11,9 +12,7 @@ const HomePage   = () => {
   return (
     <div>
       <Header />
-      <div>
-        {/* {products} */}
-      </div>
+      <ProductList products={ products } />
     </div>
   );
 }
