@@ -1,9 +1,12 @@
 import React from 'react'
 
-function Button() {
+function Button({ label, className }) {
   return (
-    <button>Nombre boton</button>
-  )
+    <button className={`px-4 rounded ${className}`}>
+      {label}
+    </button>
+  );
 }
+
 
 export default Button

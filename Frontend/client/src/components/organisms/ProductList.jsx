@@ -3,7 +3,7 @@ import ProductCard from '../molecules/ProductCard';
 
 const ProductList = ({ products }) => {
   return (
-    <div className="product-list">
+    <div className="grid grid-cols-7 gap-10 p-5">
       {products.map((product, index) => (
         <ProductCard key={index} product={product} />
       ))}

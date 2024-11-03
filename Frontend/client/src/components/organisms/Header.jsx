@@ -3,7 +3,11 @@ import SearchBar from '../molecules/SearchBar'
 
 function Header() {
   return (
-    <SearchBar></SearchBar>
+    <div
+      className="bg-orange-400 p-1 flex justify-between">
+      <p>LOGO</p>
+      <SearchBar />
+    </div>
   )
 }
 

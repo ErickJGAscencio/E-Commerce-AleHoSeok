@@ -4,9 +4,9 @@ import Button from '../atoms/Button'
 
 function SearchBar() {
   return (
-    <div>
+    <div className='flex justify-between'>
       <SearchInput></SearchInput>
-      <Button></Button>
+      <Button label={'Search'} className={""}/>
     </div>
   )
 }
