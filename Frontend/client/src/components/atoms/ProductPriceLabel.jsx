@@ -2,7 +2,7 @@ import React from 'react'
 
 function ProductPriceLabel({price}) {
   return (
-    <div>Price ${price}</div>
+    <div className='text-indigo-500'>Price ${price}</div>
   )
 }
 

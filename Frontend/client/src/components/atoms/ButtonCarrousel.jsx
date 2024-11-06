@@ -1,12 +1,11 @@
 import React from 'react'
 
-function Button({ label, className }) {
+function ButtonCarrousel({icon, className}) {
   return (
     <button className={`px-3 rounded-xl ${className}`}>
-      {label}
+      {icon}
     </button>
-  );
+  )
 }
 
-
-export default Button
+export default ButtonCarrousel
